@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      h1 {
+        color: blue;
+        font-style: italic;
+      }
+      p {
+        color: rgb(145, 14, 232);
+        font-style: italic;
+      }
+    </style>
+    <title>Bài 20: CSS Cơ Bản</title>
+  </head>
+  <body>
+    <a href="./">Home</a>
+    <a href="./contact.html">Contact</a>
+    <a href="./about.html">About</a>
+    <h1>Css Cơ Bản</h1>
+    <h2>Tổng quan CSS</h2>
+    <!-- Làm đẹp cho văn bản html  -->
+    <!-- Làn ngôn ngữ được sử dụng để tìm và định dạng -->
+    <!-- HTMl đóng vai trò định dạng các phần tử trên wed như các đoạn văn bản , tiêu đề,... -->
+    <!-- Thì CSS giúp ta có thể thêm style vào các phần tử HTML như bố cục, màu sắc, màu chữ, front chữ,... -->
+    <h2>Vị trí đặt CSS</h2>
+    <!-- Inline (CSS nội tuyến) <tag style ="css"/> -->
+    <!-- Nhược điểm: khó thay đổi, phải thay đổi riêng lẻ - không tái sử dụng dc - khó quản lý - khó tách biệt cấu trúc -->
+    <p style="color: red">
+      Inline (CSS nội tuyến): là cách viết mã ngay bên trong phần tử HTML
+    </p>
+    <!-- Internal (CSS nội bộ) <style> CSS </style> đặt trước thẻ title bên trong thẻ head -->
+    <!-- Ưu điểm: code tách biệt với thần tử, có thể áp dụng với toàn trang -> như áp dụng với toàn thẻ H1 -->
+    <!-- Nhược điểm: Vẫn khó quản lý khi có dự án lớn, quá nhiều mã CSS sẽ làm tệp HTML trở nên cồng kềnh -->
+    <p>
+      Internal (CSS nội bộ): là cách viết mã CSS trong cặp thẻ Style (đặt trong
+      khối head)
+    </p>
+    <!-- External (CSS bên ngoài) <link href="style.css"/> -->
+    <!-- Viết mã CSS thành 1 tệp .css quản lý riêng -->
+    <!-- Cần khai báo trong HTML để lấy link đến tệp CSS -->
+    <!-- rel="stylesheet" thông báo cho trình duyệt, tải tệp CSS được chỉ định và áp dụng các định dạng kiểu trong tệp đó cho trang wed hiện tại. -->
+
+    <p>
+      External (CSS bên ngoài): Trong trường hợp muốn áo dụng cho toàn bộ file
+      html nằm trên trang wed, tránh việc phải copy CSS ra tất cả các file.
+    </p>
+    <h2>Mức độ ưu tiên giữa 3 cách đặt CSS</h2>
+    <!-- Nếu có cả Inline, Internal, External, thì ưu tiên nhất là Inline -->
+    <!-- Còn Internal và External : cái nào viết sau cái đó được ưu tiên và được đè lên cái viết trước -->
+  </body>
+</html>
